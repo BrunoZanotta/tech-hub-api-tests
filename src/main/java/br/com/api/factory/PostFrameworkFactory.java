@@ -1,7 +1,6 @@
 package br.com.api.factory;
 
 import br.com.api.model.FrameworkRequestDTO;
-import br.com.api.model.FrameworkResponseDTO;
 import com.github.javafaker.Faker;
 
 public class PostFrameworkFactory {

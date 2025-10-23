@@ -17,5 +17,9 @@ public final class ApiClientFactory {
         return new ApiClientFactory(RequestSpecFactory::defaultBuilder);
     }
 
+    public static ApiClientFactory createWithoutValidation() {
+        return new ApiClientFactory(RequestSpecFactory::builderWithoutValidation);
+    }
+
     public FrameworksApi frameworks() {return FrameworksApi.frameworks(builderSupplier);}
 }

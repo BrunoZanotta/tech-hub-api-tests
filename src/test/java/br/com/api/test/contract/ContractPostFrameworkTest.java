@@ -17,4 +17,6 @@ public class ContractPostFrameworkTest extends BaseTest {
             .execute(Validatable::then)
             .statusCode(HttpStatus.SC_CREATED);
     }
+
+
 }

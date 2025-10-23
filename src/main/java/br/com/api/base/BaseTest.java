@@ -12,6 +12,7 @@ public class BaseTest {
 
     public RequestSpecification spec;
     public ApiClientFactory api;
+    public ApiClientFactory apiWithoutValidation;
 
     @BeforeClass
     public void setUp() {
@@ -19,6 +20,7 @@ public class BaseTest {
         RestAssured.basePath = "";
         spec = RequestSpecFactory.defaultSpec();
         api = ApiClientFactory.create();
+        apiWithoutValidation = ApiClientFactory.createWithoutValidation();
 
         enableLoggingOfRequestAndResponseIfValidationFails();
     }
